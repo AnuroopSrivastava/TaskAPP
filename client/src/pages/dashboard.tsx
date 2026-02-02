@@ -3,6 +3,7 @@ import { motion, type Variants } from "framer-motion";
 import {
   Check,
   ChevronDown,
+  Info,
   LogOut,
   Plus,
   Search,
@@ -255,6 +256,18 @@ export default function DashboardPage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="bg-card/40"
+                  data-testid="button-about"
+                >
+                  <a href="/about">
+                    <Info className="h-4 w-4" />
+                    About
+                  </a>
+                </Button>
+
                 <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as any)}>
                   <TabsList data-testid="tabs-dashboard">
                     <TabsTrigger value="tasks" data-testid="tab-dashboard-tasks">
@@ -403,20 +416,14 @@ export default function DashboardPage() {
                                   value={draft.status}
                                   onValueChange={(v) => setDraft((d) => ({ ...d, status: v as Status }))}
                                 >
-                                  <SelectTrigger
-                                    className="bg-black/20"
-                                    data-testid="select-task-status"
-                                  >
+                                  <SelectTrigger className="bg-black/20" data-testid="select-task-status">
                                     <SelectValue placeholder="Status" />
                                   </SelectTrigger>
                                   <SelectContent>
                                     <SelectItem value="todo" data-testid="option-status-todo">
                                       To do
                                     </SelectItem>
-                                    <SelectItem
-                                      value="in_progress"
-                                      data-testid="option-status-in-progress"
-                                    >
+                                    <SelectItem value="in_progress" data-testid="option-status-in-progress">
                                       In progress
                                     </SelectItem>
                                     <SelectItem value="done" data-testid="option-status-done">
@@ -430,14 +437,9 @@ export default function DashboardPage() {
                                 <Label data-testid="label-task-priority">Priority</Label>
                                 <Select
                                   value={draft.priority}
-                                  onValueChange={(v) =>
-                                    setDraft((d) => ({ ...d, priority: v as Priority }))
-                                  }
+                                  onValueChange={(v) => setDraft((d) => ({ ...d, priority: v as Priority }))}
                                 >
-                                  <SelectTrigger
-                                    className="bg-black/20"
-                                    data-testid="select-task-priority"
-                                  >
+                                  <SelectTrigger className="bg-black/20" data-testid="select-task-priority">
                                     <SelectValue placeholder="Priority" />
                                   </SelectTrigger>
                                   <SelectContent>
@@ -495,10 +497,7 @@ export default function DashboardPage() {
 
                         <div className="grid w-full grid-cols-2 gap-2">
                           <Select value={status} onValueChange={(v) => setStatus(v as any)}>
-                            <SelectTrigger
-                              className="bg-black/20"
-                              data-testid="select-filter-status"
-                            >
+                            <SelectTrigger className="bg-black/20" data-testid="select-filter-status">
                               <SelectValue placeholder="Status" />
                             </SelectTrigger>
                             <SelectContent>
@@ -508,10 +507,7 @@ export default function DashboardPage() {
                               <SelectItem value="todo" data-testid="option-filter-status-todo">
                                 To do
                               </SelectItem>
-                              <SelectItem
-                                value="in_progress"
-                                data-testid="option-filter-status-in-progress"
-                              >
+                              <SelectItem value="in_progress" data-testid="option-filter-status-in-progress">
                                 In progress
                               </SelectItem>
                               <SelectItem value="done" data-testid="option-filter-status-done">
@@ -521,10 +517,7 @@ export default function DashboardPage() {
                           </Select>
 
                           <Select value={priority} onValueChange={(v) => setPriority(v as any)}>
-                            <SelectTrigger
-                              className="bg-black/20"
-                              data-testid="select-filter-priority"
-                            >
+                            <SelectTrigger className="bg-black/20" data-testid="select-filter-priority">
                               <SelectValue placeholder="Priority" />
                             </SelectTrigger>
                             <SelectContent>
@@ -534,10 +527,7 @@ export default function DashboardPage() {
                               <SelectItem value="low" data-testid="option-filter-priority-low">
                                 Low
                               </SelectItem>
-                              <SelectItem
-                                value="medium"
-                                data-testid="option-filter-priority-medium"
-                              >
+                              <SelectItem value="medium" data-testid="option-filter-priority-medium">
                                 Medium
                               </SelectItem>
                               <SelectItem value="high" data-testid="option-filter-priority-high">
@@ -580,9 +570,7 @@ export default function DashboardPage() {
                                     )}
                                     data-testid={`button-toggle-done-${t.id}`}
                                     aria-label={
-                                      t.status === "done"
-                                        ? "Mark as not done"
-                                        : "Mark as done"
+                                      t.status === "done" ? "Mark as not done" : "Mark as done"
                                     }
                                   >
                                     <Check className="h-4 w-4" />
