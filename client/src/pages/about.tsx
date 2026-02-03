@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion, type Variants } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft, Github, Instagram, Linkedin, Sparkles } from "lucide-react";
+import { ArrowLeft, Instagram, Linkedin, Sparkles } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -111,7 +111,7 @@ export default function AboutPage() {
             >
               Pulseboard is a design-first frontend prototype built for a modern auth + dashboard
               assignment. The focus is on responsiveness, validation, error states, and micro-motion
-              that feels deliberatenot distracting.
+              that feels deliberate—not distracting.
             </p>
           </motion.div>
 
@@ -133,7 +133,7 @@ export default function AboutPage() {
 
                 <ul className="space-y-3" data-testid="list-about-goals">
                   <Bullet testId="bullet-goal-1">A sleek auth experience with client-side validation.</Bullet>
-                  <Bullet testId="bullet-goal-2">Clear loading, success, and error states100% readable.</Bullet>
+                  <Bullet testId="bullet-goal-2">Clear loading, success, and error states—100% readable.</Bullet>
                   <Bullet testId="bullet-goal-3">A dashboard UI with search + filters and CRUD interactions.</Bullet>
                   <Bullet testId="bullet-goal-4">A cohesive theme: glass surfaces, glow accents, and soft depth.</Bullet>
                   <Bullet testId="bullet-goal-5">Responsive layout that still feels premium on mobile.</Bullet>
@@ -157,10 +157,10 @@ export default function AboutPage() {
             <Card className="pb-glass pb-ring rounded-3xl md:col-span-5">
               <CardHeader className="space-y-1">
                 <div className="pb-title text-xl" data-testid="text-about-me-title">
-                  About Me  Anuroop Srivastava
+                  About Me — Anuroop Srivastava
                 </div>
                 <p className="text-sm text-muted-foreground" data-testid="text-about-me-desc">
-                  Full-Stack Web Developer  AI / ML Enthusiast
+                  Full-Stack Web Developer & AI / ML Enthusiast
                 </p>
               </CardHeader>
               <CardContent className="space-y-5">
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-sm leading-6 text-muted-foreground" data-testid="text-about-me-body">
-                  Hi! Im Anuroop Srivastava, a passionate and dedicated Full-Stack Web Developer &
+                  Hi! I’m Anuroop Srivastava, a passionate and dedicated Full-Stack Web Developer &
                   AI/ML Enthusiast from India. I enjoy building fast, modern, and visually appealing
                   web applications while exploring the latest advancements in machine learning and
                   artificial intelligence.
@@ -206,12 +206,6 @@ export default function AboutPage() {
                     label="Instagram"
                     testId="link-instagram"
                   />
-                  <SocialLink
-                    href="#"
-                    icon={<Github className="h-4 w-4" />}
-                    label="GitHub"
-                    testId="link-github"
-                  />
                 </div>
 
                 <div
@@ -222,7 +216,7 @@ export default function AboutPage() {
                     Anuroop Srivastava
                   </div>
                   <div className="mt-1 text-sm text-muted-foreground" data-testid="text-about-role">
-                    Full-Stack Web Developer  AI / ML Enthusiast
+                    Full-Stack Web Developer & AI / ML Enthusiast
                   </div>
                 </div>
               </CardContent>
