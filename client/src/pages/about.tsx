@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion, type Variants } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft, Instagram, Linkedin, Sparkles } from "lucide-react";
+import { ArrowLeft, Github, Instagram, Linkedin, Sparkles } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
