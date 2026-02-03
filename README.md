@@ -145,21 +145,21 @@ Backend: runs via Express + Vite middleware
 
 ## 🔌 Backend Overview
 
-Express server defined in server/index.ts
-Central routing via server/routes.ts
-Static serving handled by server/static.ts
-Storage abstraction in server/storage.ts
-Vite integrated for full-stack development
+- Express server defined in server/index.ts
+- Central routing via server/routes.ts
+- Static serving handled by server/static.ts
+- Storage abstraction in server/storage.ts
+- Vite integrated for full-stack development
 
 ---
 
 ## 🧠 Frontend Overview
 
-Page-based routing using React components
-UI powered by shadcn/ui
-Tailwind utility-first styling
-Reusable hooks & utilities
-Clean separation of concerns
+- Page-based routing using React components
+- UI powered by shadcn/ui
+- Tailwind utility-first styling
+- Reusable hooks & utilities
+- Clean separation of concerns
 
 ---
 
@@ -184,19 +184,19 @@ MongoDB Atlas can be connected easily
 
 ## 🔮 Future Enhancements
 
-MongoDB Atlas integration
-Full CRUD task APIs
-Authentication (JWT)
-User-specific task storage
-Role-based dashboards
+- MongoDB Atlas integration
+- Full CRUD task APIs
+- Authentication (JWT)
+- User-specific task storage
+- Role-based dashboards
 
 ---
 
 ## 👨‍💻 Author
 
-Anuroop Srivastava
-B.Tech (CSE)
-Full-Stack Development Enthusiast
+- Anuroop Srivastava
+- B.Tech (CSE)
+- Full-Stack Development Enthusiast
 
 
 ---
