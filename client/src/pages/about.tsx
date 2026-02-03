@@ -206,6 +206,12 @@ export default function AboutPage() {
                     label="Instagram"
                     testId="link-instagram"
                   />
+                  <SocialLink
+                    href="https://github.com/AnuroopSrivastava"
+                    icon={<Github className="h-4 w-4" />}
+                    label="GitHub"
+                    testId="link-github"
+                  />
                 </div>
 
                 <div
